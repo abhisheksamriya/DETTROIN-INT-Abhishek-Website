@@ -6,9 +6,11 @@ import { Menu, X, Phone, Mail } from "lucide-react";
 import Image from "next/image";
 import { navLinks } from "@/constant/contant";
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "./Icons";
+import PopUpModal from "./PopUPModal";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
 
 
@@ -70,7 +72,7 @@ export default function Navbar() {
 
             {/* cta button */}
             <div className="hidden md:flex items-center">
-              <button className="bg-brand-yellow text-brand-green px-6 py-2.5 rounded-full text-sm font-bold hover:brightness-110 transition-transform hover:scale-105 flex items-center gap-2 shadow-md">
+              <button onClick={() => setIsPopUpOpen(true)} className="bg-brand-yellow text-brand-green px-6 py-2.5 rounded-full text-sm font-bold hover:brightness-110 transition-transform hover:scale-105 flex items-center gap-2 shadow-md cursor-pointer">
                 Admissions Open
               </button>
             </div>
@@ -107,6 +109,11 @@ export default function Navbar() {
           </div>
         )}
       </div>
+
+      <PopUpModal
+        isOpen={isPopUpOpen} 
+        onClose={() => setIsPopUpOpen(false)} 
+      />
     </header>
   );
 }
