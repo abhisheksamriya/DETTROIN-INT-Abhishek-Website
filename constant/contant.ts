@@ -95,3 +95,12 @@
       answer: "Our focus on value-based education, modern infrastructure, experienced faculty, concept-based learning, and a safe, secure campus makes us a top choice."
     }
   ];
+
+  export const highlights = [
+  { title: "Academic Excellence", desc: "Structured syllabus coverage, concept-based teaching, and regular performance monitoring.", icon: "📚", accent: "from-amber-400 to-orange-500" },
+  { title: "Holistic Development", desc: "Sports, physical education, cultural programs, arts, and leadership training.", icon: "🌟", accent: "from-brand-yellow to-yellow-600" },
+  { title: "Modern Infrastructure", desc: "Smart interactive classrooms, science & computer labs, and a well-stocked library.", icon: "🏫", accent: "from-emerald-400 to-teal-600" },
+  { title: "Experienced Faculty", desc: "Qualified, student-focused educators dedicated to mentoring and individual attention.", icon: "👨‍🏫", accent: "from-blue-400 to-indigo-600" },
+  { title: "Safe & Disciplined", desc: "CCTV monitoring, secure entry/exit systems, and structured safety policies.", icon: "🛡️", accent: "from-rose-400 to-red-600" },
+  { title: "Values & Ethics", desc: "Strong focus on honesty, integrity, respect, responsibility, and compassion.", icon: "🤝", accent: "from-purple-400 to-pink-600" }
+];
