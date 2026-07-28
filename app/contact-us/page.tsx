@@ -4,8 +4,7 @@ import ContactSection from "@/components/ContactSection";
 
 export default function ContactUsPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Page Banner */}
+    <div>
       <PageBanner
         tag="Contact Us"
         title="Excellence International School"
@@ -13,10 +12,7 @@ export default function ContactUsPage() {
         imageSrc="/Contact.webp"
       />
 
-      {/* Main Contact Section: Left Info, Right Map */}
-<ContactSection/>
-
-      {/* FAQ Section */}
+      <ContactSection/>
       <FAQSection />
 
     </div>

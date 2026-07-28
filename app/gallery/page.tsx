@@ -3,9 +3,6 @@ import JoinUsSection from "@/components/JoinUsSection";
 import PageBanner from "@/components/PageBanner";
 
 export default function GalleryPage() {
-
-
-
   return (
     <div>
         <PageBanner

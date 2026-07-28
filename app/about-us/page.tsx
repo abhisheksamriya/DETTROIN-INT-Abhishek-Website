@@ -5,9 +5,6 @@ import VisionMission from "@/components/VisionMission";
 import PageBanner from "@/components/PageBanner";
 
 export default function AboutUsPage() {
-
-
-
   return (
     <div>
         <PageBanner
@@ -16,9 +13,9 @@ export default function AboutUsPage() {
         subtitle="Shaping future leaders through quality education, moral values, and a safe, nurturing environment in Aligarh."
         imageSrc="/about.webp"
       />
-<VisionMission/>
-<Pillars/>
-<JoinUsSection/>
+    <VisionMission/>
+    <Pillars/>
+    <JoinUsSection/>
     </div>
   );
 }
