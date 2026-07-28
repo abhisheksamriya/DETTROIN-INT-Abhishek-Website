@@ -1,11 +1,18 @@
 import { features } from "@/constant/contant";
+import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-gray-50/50">
+    <section className="py-20 bg-gray-50/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-2xl mx-auto mb-16 space-y-3"
+        >
           <span className="text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-green/10 px-3 py-1 rounded-full">
             Our Strengths
           </span>
@@ -15,14 +22,18 @@ export default function WhyChooseUs() {
           <p className="text-gray-500 text-base">
             Providing a holistic ecosystem where students thrive academically, socially, and safely.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div 
+              <motion.div 
                 key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }} // Stagger effect
                 className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
@@ -32,7 +43,7 @@ export default function WhyChooseUs() {
                   <h3 className="text-xl font-bold text-brand-green mb-2">{item.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
