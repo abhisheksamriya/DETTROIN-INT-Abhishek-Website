@@ -48,12 +48,12 @@ export default function Navbar() {
     {/* green bar */}
       <div className="bg-brand-green text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-18 sm:h-20">
+          <div className="flex justify-between items-center h-15 sm:h-20">
             
             {/* website logo */}
             <div className="shrink-0 flex items-center bg-white px-4 p-2 shadow-sm">
               <Link href="/" className="flex flex-col items-center justify-center text-brand-green">
-                <Image src="/logo.webp" alt="Logo" width={50} height={50} className="object-contain" />
+                <Image src="/logo.webp" alt="Logo" width={50} height={50} className="h-8 w-8 sm:h-14 sm:w-14 object-contain" />
               </Link>
             </div>
 
