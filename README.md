@@ -9,7 +9,7 @@
 * **Email Address:** abhisheksamriya2024@gmail.com
 * **GitHub Username:** abhisheksamriya
 * **Selected Website:** [Excellence International School](https://excellenceinternationalschool.com/)
-* **Live Demo Link:** [Website Url](https://dettroin-int-abhishek-website-zeta.vercel.app/][)
+* **Live Demo Link:** [Website Url](https://dettroin-int-abhishek-website-zeta.vercel.app/)
 
 ---
 

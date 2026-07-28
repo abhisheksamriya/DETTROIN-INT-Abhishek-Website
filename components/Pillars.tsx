@@ -5,6 +5,7 @@ export default function Pillars() {
     <section className="py-24 bg-gray-50/50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
+        {/* section heading */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-green/10 px-3.5 py-1.5 rounded-full">
             What We Offer
@@ -17,19 +18,19 @@ export default function Pillars() {
           </p>
         </div>
 
+        {/* pillar card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {highlights.map((item, index) => {
-            const Icon = item.icon; // Lucide icon
+            const Icon = item.icon;
             return (
               <div 
                 key={index}
                 className="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-brand-green/20 transition-all duration-500 overflow-hidden flex flex-col justify-between"
               >
-                {/* Clean Single Color Top Accent Line */}
+                {/* top line */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-brand-green/10 group-hover:bg-brand-green transition-colors duration-500"></div>
 
                 <div>
-                  {/* Clean Icon Wrapper */}
                   <div className="mb-6 bg-brand-green/5 group-hover:bg-brand-green/10 text-brand-green w-14 h-14 rounded-2xl flex items-center justify-center border border-brand-green/10 transition-colors duration-300">
                     <Icon size={24} strokeWidth={2} />
                   </div>

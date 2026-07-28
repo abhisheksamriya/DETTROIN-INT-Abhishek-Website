@@ -4,6 +4,7 @@ import { gallery } from "@/constant/contant";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+// responsive
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1324 },
@@ -24,6 +25,7 @@ const responsive = {
 
 const Slider = () => {
   return (
+    // carousel setup
     <Carousel
       responsive={responsive}
       infinite={true}

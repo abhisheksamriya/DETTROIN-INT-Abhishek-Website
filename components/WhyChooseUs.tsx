@@ -1,5 +1,4 @@
 "use client";
-
 import { features } from "@/constant/contant";
 import { motion } from "framer-motion";
 
