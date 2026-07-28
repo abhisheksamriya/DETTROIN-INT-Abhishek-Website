@@ -8,23 +8,48 @@
     { name: "Contact Us", href: "/contact-us" },
   ];
 
-   export const reviews = [
-    {
-      name: "Kavita Agarwal",
-      role: "Parent of Diya Agarwal, Class 1",
-      feedback: "The school not only focuses on academics but also builds strong values. My child is learning responsibility, honesty, respect, and teamwork while having fun."
-    },
-    {
-      name: "Rakesh Sharma",
-      role: "Parent of Aarav Sharma, Class 5",
-      feedback: "Excellence International School has been amazing for my child. The teachers are caring, lessons are fun, and my child is growing in confidence every day."
-    },
-    {
-      name: "Neha Verma",
-      role: "Parent of Anaya Verma, Class 3",
-      feedback: "I love how safe and welcoming the school is. The staff know every student well and create a positive environment where learning and friendship thrive."
-    }
-  ];
+export const reviews = [
+  {
+    name: "Kavita Agarwal",
+    role: "Parent of Diya Agarwal, Class 1",
+    feedback: "The school not only focuses on academics but also builds strong values. My child is learning responsibility, honesty, respect, and teamwork while having fun."
+  },
+  {
+    name: "Rakesh Sharma",
+    role: "Parent of Aarav Sharma, Class 5",
+    feedback: "Excellence International School has been amazing for my child. The teachers are caring, lessons are fun, and my child is growing in confidence every day."
+  },
+  {
+    name: "Neha Verma",
+    role: "Parent of Anaya Verma, Class 3",
+    feedback: "I love how safe and welcoming the school is. The staff know every student well and create a positive environment where learning and friendship thrive."
+  },
+  {
+    name: "Amit Saxena",
+    role: "Parent of Rohan Saxena, Class 4",
+    feedback: "The individual attention given to every child here is commendable. My son has improved drastically in his academics and sports activities."
+  },
+  {
+    name: "Pooja Gupta",
+    role: "Parent of Avni Gupta, Class 2",
+    feedback: "An incredible learning atmosphere! The teachers are very approachable and ensure that children understand concepts practically rather than just memorizing."
+  },
+  {
+    name: "Manoj Kumar",
+    role: "Parent of Aryan Kumar, Class 6",
+    feedback: "Safe transport facilities and disciplined campus environment give us great peace of mind. Highly recommended school in Aligarh."
+  },
+  {
+    name: "Sunita Chauhan",
+    role: "Parent of Tanya Chauhan, Pre-Primary",
+    feedback: "The pre-primary wing is so colorful and engaging. My daughter looks forward to going to school every single day with a big smile."
+  },
+  {
+    name: "Vikram Malhotra",
+    role: "Parent of Kabir Malhotra, Class 5",
+    feedback: "Great balance between academics and extracurricular activities. The school truly believes in overall holistic development."
+  }
+];
 
   export const stages = [
     {

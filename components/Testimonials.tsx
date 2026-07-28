@@ -1,11 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { reviews } from "@/constant/contant";
-import { motion } from "framer-motion";
 
 export default function Testimonials() {
-
-
+  const [isPaused, setIsPaused] = useState(false);
   const duplicatedReviews = [...reviews, ...reviews, ...reviews];
 
   return (
@@ -25,25 +24,24 @@ export default function Testimonials() {
       </div>
 
       <div className="relative w-full overflow-hidden flex">
-        <div className="absolute left-0 inset-y-0 w-20 bg-linear-to-r from-gray-100 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 inset-y-0 w-20 bg-linear-to-l from-gray-100 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 inset-y-0 w-10 md:w-20 bg-linear-to-r from-gray-100 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 inset-y-0 w-10 md:w-20 bg-linear-to-l from-gray-100 to-transparent z-10 pointer-events-none"></div>
 
-        <motion.div
-          className="flex gap-8 px-4"
-          animate={{ x: ["0%", "-33.33%"] }}
-          transition={{
-            ease: "linear",
-            duration: 25,
-            repeat: Infinity,
-          }}
+        <div
+          className="flex gap-6 md:gap-8 px-4 animate-marquee cursor-grab active:cursor-grabbing touch-pan-y"
+          style={{ animationPlayState: isPaused ? "paused" : "running" }}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onTouchStart={() => setIsPaused(true)}
+          onTouchEnd={() => setIsPaused(false)}
         >
           {duplicatedReviews.map((item, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between min-w-60 sm:min-w-95 max-w-100 shrink-0"
+              className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between w-70 sm:w-87.5 shrink-0 select-none"
             >
               <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">
-                "{item.feedback}"
+                &ldquo;{item.feedback}&rdquo;
               </p>
               <div>
                 <h4 className="font-bold text-brand-green text-base">{item.name}</h4>
@@ -52,7 +50,7 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
