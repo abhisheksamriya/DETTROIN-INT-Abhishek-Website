@@ -30,4 +30,4 @@
 4. **Floating Action Buttons:** Sticky WhatsApp chat and direct phone call buttons added on same side for more good view.
 5. **About Page:** In original website about page is just text i use some reusable components from home or give about page a professional modern look.
 6. **Gallery and Contact us:** In gallery i added a photo slider so anyone can view images in modern way also in contact section i added map or address side by side so they look align.
----
+7. **Speed Optimization:** I also improved the website speed it is more then 90 on every page now.
