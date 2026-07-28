@@ -32,17 +32,9 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, [nextSlide]);
 
-  const handleDragEnd = (event: any, info: any) => {
-    if (info.offset.x > 50) {
-      prevSlide();
-    } else if (info.offset.x < -50) {
-      nextSlide();
-    }
-  };
-
   return (
     <section className="relative w-full bg-gray-100 overflow-hidden">
-      {/* image for fix size  of container*/}
+      {/* image for fix size of container */}
       <Image
         src={images[0]}
         alt="placeholder"
@@ -60,11 +52,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full "
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.2}
-          onDragEnd={handleDragEnd}
+          className="absolute inset-0 w-full h-full"
         >
           <Image
             src={images[currentIndex]}
@@ -79,14 +67,14 @@ export default function Hero() {
 
       <button 
         onClick={prevSlide}
-        className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/60 hover:bg-white text-brand-green p-2 rounded-full shadow-lg transition-all"
+        className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/60 hover:bg-white text-brand-green p-2 rounded-full shadow-lg transition-all cursor-pointer"
       >
         <ChevronLeft size={28} />
       </button>
 
       <button 
         onClick={nextSlide}
-        className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/60 hover:bg-white text-brand-green p-2 rounded-full shadow-lg transition-all"
+        className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/60 hover:bg-white text-brand-green p-2 rounded-full shadow-lg transition-all cursor-pointer"
       >
         <ChevronRight size={28} />
       </button>
