@@ -102,7 +102,7 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-brand-yellow text-brand-green px-6 py-3 rounded-md text-base font-bold hover:brightness-110 transition-colors">
+              <button onClick={()=>setIsPopUpOpen(true)} className="w-full mt-4 bg-brand-yellow text-brand-green px-6 py-3 rounded-md text-base font-bold hover:brightness-110 transition-colors">
                 Admissions Open
               </button>
             </div>
