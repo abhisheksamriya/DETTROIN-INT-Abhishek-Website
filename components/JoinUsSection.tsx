@@ -12,7 +12,7 @@ const JoinUsSection = () => {
           </p>
           <div className="pt-4">
             <Link 
-              href="/contact" 
+              href="/contact-us" 
               className="inline-block bg-brand-green text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all transform hover:scale-105"
             >
               Contact Us for Admissions
