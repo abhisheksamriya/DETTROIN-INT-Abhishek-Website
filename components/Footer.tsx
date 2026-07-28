@@ -44,9 +44,8 @@ export default function Footer() {
 
         </div>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center text-xs text-white/60">
           <p>© Copyright 2026 Excellence International School. All Rights Reserved.</p>
-          <p className="mt-2 sm:mt-0">Designed & Developed for Clean UI</p>
         </div>
 
       </div>
