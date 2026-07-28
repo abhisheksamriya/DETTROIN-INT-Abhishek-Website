@@ -11,7 +11,6 @@ const images = [
   "/hero5.webp",
   "/hero6.webp",
   "/hero1.webp", 
-
 ];
 
 export default function Hero() {

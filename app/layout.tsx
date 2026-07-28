@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Best School in Aligarh | Top Schools in Aligarh – Excellence International School",
   description: "Excellence International School is among the best schools in Aligarh, Uttar Pradesh, offering quality education and holistic development.",
+  icons: {
+    icon: "/favicon.png", 
+  },
 };
 
 export default function RootLayout({
