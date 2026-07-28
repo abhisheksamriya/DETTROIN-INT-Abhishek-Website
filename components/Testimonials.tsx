@@ -40,7 +40,7 @@ export default function Testimonials() {
           {duplicatedReviews.map((item, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between min-w-75 sm:min-w-95 max-w-100 shrink-0"
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between min-w-60 sm:min-w-95 max-w-100 shrink-0"
             >
               <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">
                 "{item.feedback}"
