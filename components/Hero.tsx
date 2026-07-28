@@ -5,12 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/hero1.webp", 
   "/hero2.webp",
   "/hero3.webp",
   "/hero4.webp",
   "/hero5.webp",
   "/hero6.webp",
+  "/hero1.webp", 
+
 ];
 
 export default function Hero() {
