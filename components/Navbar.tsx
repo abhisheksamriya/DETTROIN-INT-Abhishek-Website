@@ -15,7 +15,7 @@ export default function Navbar() {
 
 
   return (
-    <header className="fixed top-0 w-full z-50 shadow-md">
+    <header className="fixed top-0 w-full z-1000 shadow-md">  
       {/* top yellow bar */}
       <div className="hidden md:flex bg-brand-yellow text-brand-green text-xs sm:text-sm py-2 px-4 sm:px-6 lg:px-8 justify-between items-center gap-2">
         <div className="flex flex-wrap justify-center items-center gap-8">
