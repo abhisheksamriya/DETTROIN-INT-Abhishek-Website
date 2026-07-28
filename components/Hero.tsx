@@ -48,7 +48,7 @@ export default function Hero() {
         alt="placeholder"
         width={1920}
         height={700}
-        className="w-full h-auto invisible pointer-events-none min-h-55"
+        className="w-full h-auto invisible pointer-events-none min-h-45"
         priority
         unoptimized
       />
