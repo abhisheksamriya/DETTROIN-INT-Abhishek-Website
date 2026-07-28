@@ -8,7 +8,7 @@ const ContactSection = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-            
+            {/* left address */}
             <div className="lg:col-span-6 space-y-8 p-8 sm:p-10 flex flex-col justify-between">
               <div className="space-y-3">
                 <span className="text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-green/10 px-3 py-1.5 rounded-full">
@@ -86,7 +86,7 @@ const ContactSection = () => {
 
             </div>
 
-            {/* Right Side: Google Map View */}
+            {/* google map */}
             <div className="lg:col-span-6 lg:h-auto">
               <iframe 
                 title="School Location Map"

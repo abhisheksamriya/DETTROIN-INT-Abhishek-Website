@@ -1,5 +1,4 @@
 "use client";
-
 import { stages } from "@/constant/contant";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -8,7 +7,7 @@ export default function AcademicStages() {
   return (
     <section className="py-16 md:py-24 bg-gray-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+        {/* section heading */}
         <motion.div 
           initial={{ opacity: 0, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, filter: "blur(0px)" }}
@@ -24,6 +23,7 @@ export default function AcademicStages() {
           </p>
         </motion.div>
 
+        {/* grid cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {stages.map((stage, index) => (
             <motion.div 

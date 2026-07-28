@@ -3,6 +3,7 @@ import { Phone } from "lucide-react";
 export default function FloatingButtons() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+      {/* whatsapp */}
       <a
         href="https://wa.me/917055582117?text=Hello,%20I%20want%20to%20know%20more%20about%20admissions%20at%20Excellence%20International%20School."
         target="_blank"
@@ -24,7 +25,7 @@ export default function FloatingButtons() {
           Chat on WhatsApp
         </span>
       </a>
-
+{/* phone */}
       <a
         href="tel:+917055582117"
         aria-label="Call Us"

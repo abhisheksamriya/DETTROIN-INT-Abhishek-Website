@@ -1,9 +1,7 @@
 "use client";
-
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { faqs } from "@/constant/contant";
-
 
 
 export default function FAQSection() {
@@ -17,6 +15,7 @@ export default function FAQSection() {
     <section className="py-20 bg-gray-50/50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* section heading */}
         <div className="text-center mb-16 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-green/10 px-3 py-1 rounded-full">
             Got Questions?
@@ -28,7 +27,7 @@ export default function FAQSection() {
             Find answers to common questions about admissions, campus, and academics.
           </p>
         </div>
-
+        {/* mapped questions */}
         <div className="space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
