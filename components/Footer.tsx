@@ -1,3 +1,5 @@
+import { navLinks } from "@/constant/contant";
+
 export default function Footer() {
   return (
     <footer className="bg-brand-green text-white pt-16 pb-8">
@@ -15,11 +17,9 @@ export default function Footer() {
           <div>
             <h4 className="text-brand-yellow font-bold text-base mb-4">Quick Links</h4>
             <ul className="space-y-2.5 text-sm text-white/80">
-              <li><a href="#" className="hover:text-brand-yellow transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-brand-yellow transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-brand-yellow transition-colors">Admissions</a></li>
-              <li><a href="#" className="hover:text-brand-yellow transition-colors">Gallery</a></li>
-              <li><a href="#" className="hover:text-brand-yellow transition-colors">Contact Us</a></li>
+            {navLinks.map((l)=>
+              <li key={l.name}><a  href={l.href} className="hover:text-brand-yellow transition-colors">{l.name}</a></li>
+            )}
             </ul>
           </div>
 

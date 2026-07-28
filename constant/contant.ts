@@ -1,3 +1,6 @@
+ import { GraduationCap, ShieldCheck, Building2, Bus,BookOpen, Star, Users, HeartHandshake } from "lucide-react";
+
+ 
  export const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
@@ -50,28 +53,28 @@
     }
   ];
 
-  export   const features = [
-    {
-      title: "Experienced Faculty",
-      desc: "Qualified and dedicated educators focused on individual student attention and interactive learning.",
-      icon: "👨‍🏫"
-    },
-    {
-      title: "Safe & Secure Campus",
-      desc: "CCTV monitoring, supervised campus areas, and strict safety protocols for a secure environment.",
-      icon: "🛡️"
-    },
-    {
-      title: "Modern Infrastructure",
-      desc: "Well-planned smart classrooms, activity zones, and advanced learning resources.",
-      icon: "🏫"
-    },
-    {
-      title: "Safe Transportation",
-      desc: "Well-maintained school buses with experienced drivers and supervised student travel.",
-      icon: "🚌"
-    }
-  ];
+export const features = [
+  {
+    title: "Experienced Faculty",
+    desc: "Qualified and dedicated educators focused on individual student attention and interactive learning.",
+    icon: GraduationCap
+  },
+  {
+    title: "Safe & Secure Campus",
+    desc: "CCTV monitoring, supervised campus areas, and strict safety protocols for a secure environment.",
+    icon: ShieldCheck
+  },
+  {
+    title: "Modern Infrastructure",
+    desc: "Well-planned smart classrooms, activity zones, and advanced learning resources.",
+    icon: Building2
+  },
+  {
+    title: "Safe Transportation",
+    desc: "Well-maintained school buses with experienced drivers and supervised student travel.",
+    icon: Bus
+  }
+];
 
   export const faqs = [
     {
@@ -96,11 +99,53 @@
     }
   ];
 
-  export const highlights = [
-  { title: "Academic Excellence", desc: "Structured syllabus coverage, concept-based teaching, and regular performance monitoring.", icon: "📚", accent: "from-amber-400 to-orange-500" },
-  { title: "Holistic Development", desc: "Sports, physical education, cultural programs, arts, and leadership training.", icon: "🌟", accent: "from-brand-yellow to-yellow-600" },
-  { title: "Modern Infrastructure", desc: "Smart interactive classrooms, science & computer labs, and a well-stocked library.", icon: "🏫", accent: "from-emerald-400 to-teal-600" },
-  { title: "Experienced Faculty", desc: "Qualified, student-focused educators dedicated to mentoring and individual attention.", icon: "👨‍🏫", accent: "from-blue-400 to-indigo-600" },
-  { title: "Safe & Disciplined", desc: "CCTV monitoring, secure entry/exit systems, and structured safety policies.", icon: "🛡️", accent: "from-rose-400 to-red-600" },
-  { title: "Values & Ethics", desc: "Strong focus on honesty, integrity, respect, responsibility, and compassion.", icon: "🤝", accent: "from-purple-400 to-pink-600" }
+
+export const highlights = [
+  { title: "Academic Excellence", desc: "Structured syllabus coverage, concept-based teaching, and regular performance monitoring.", icon: BookOpen },
+  { title: "Holistic Development", desc: "Sports, physical education, cultural programs, arts, and leadership training.", icon: Star },
+  { title: "Modern Infrastructure", desc: "Smart interactive classrooms, science & computer labs, and a well-stocked library.", icon: Building2 },
+  { title: "Experienced Faculty", desc: "Qualified, student-focused educators dedicated to mentoring and individual attention.", icon: Users },
+  { title: "Safe & Disciplined", desc: "CCTV monitoring, secure entry/exit systems, and structured safety policies.", icon: ShieldCheck },
+  { title: "Values & Ethics", desc: "Strong focus on honesty, integrity, respect, responsibility, and compassion.", icon: HeartHandshake }
+];
+
+export const gallery = [
+  {
+    id: 1,
+    image: "/image1.webp",
+  },
+  {
+    id: 2,
+    image: "/image2.webp",
+  },
+  {
+    id: 3,
+    image: "/image3.webp",
+  },
+  {
+    id: 4,
+    image: "/image4.webp",
+  },
+  {
+    id: 5,
+    image: "/image5.webp",
+  },
+  {
+    id: 6,
+    image: "/image6.webp",
+  },
+  {
+    id: 7,
+    image: "/image7.webp",
+  },
+  {
+    id: 8,
+    image: "/image8.webp",
+  },  {
+    id: 9,
+    image: "/image9.webp",
+  },  {
+    id: 10,
+    image: "/image10.webp",
+  },
 ];

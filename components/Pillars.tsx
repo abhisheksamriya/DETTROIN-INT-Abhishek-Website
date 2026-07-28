@@ -2,7 +2,7 @@ import { highlights } from "@/constant/contant";
 
 export default function Pillars() {
   return (
-    <section className="py-24 bg-gray-50/50  relative overflow-hidden">
+    <section className="py-24 bg-gray-50/50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -18,34 +18,38 @@ export default function Pillars() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {highlights.map((item, index) => (
-            <div 
-              key={index}
-              className="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col justify-between"
-            >
-              {/* Top Accent Line */}
-              <div className={`absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r ${item.accent} opacity-80 group-hover:opacity-100 transition-opacity`}></div>
+          {highlights.map((item, index) => {
+            const Icon = item.icon; // Lucide icon
+            return (
+              <div 
+                key={index}
+                className="group relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-brand-green/20 transition-all duration-500 overflow-hidden flex flex-col justify-between"
+              >
+                {/* Clean Single Color Top Accent Line */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-brand-green/10 group-hover:bg-brand-green transition-colors duration-500"></div>
 
-              <div>
-                <div className="text-3xl mb-6 bg-gray-50 group-hover:bg-brand-green/5 w-16 h-16 rounded-2xl flex items-center justify-center border border-gray-100 transition-colors duration-300">
-                  {item.icon}
+                <div>
+                  {/* Clean Icon Wrapper */}
+                  <div className="mb-6 bg-brand-green/5 group-hover:bg-brand-green/10 text-brand-green w-14 h-14 rounded-2xl flex items-center justify-center border border-brand-green/10 transition-colors duration-300">
+                    <Icon size={24} strokeWidth={2} />
+                  </div>
+
+                  <h3 className="text-xl font-bold text-brand-green mb-3 group-hover:text-brand-yellow transition-colors duration-300">
+                    {item.title}
+                  </h3>
+                  
+                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
 
-                <h3 className="text-xl font-bold text-brand-green mb-3 group-hover:text-brand-yellow transition-colors duration-300">
-                  {item.title}
-                </h3>
-                
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                  {item.desc}
-                </p>
+                <div className="mt-6 pt-4 border-t border-gray-50 flex items-center gap-2 text-xs font-semibold text-brand-green/60">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow group-hover:animate-pulse"></span>
+                  <span>Core Pillar</span>
+                </div>
               </div>
-
-              <div className="mt-6 pt-4 border-t border-gray-50 flex items-center gap-2 text-xs font-semibold text-brand-green/60">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></span>
-                <span>Core Pillar</span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>
